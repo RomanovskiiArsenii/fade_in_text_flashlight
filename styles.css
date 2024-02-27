@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #101010;
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+}
+
+.fadein_text {
+    margin: 2rem;
+    font-size: 4rem;
+
+    background: 50% 100% / 80% 0% no-repeat radial-gradient(ellipse at left, #fff, transparent, transparent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: reveal 3000ms cubic-bezier(1, 0.1, 0.95, 0.35) alternate infinite 1000ms;
+}
+
+@keyframes reveal {
+    100% {
+        background-size: 800% 800%;
+    }
+}
